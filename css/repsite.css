@@ -846,8 +846,12 @@ footer {
 }
 
 @media (max-width: 768px) {
-    footer {
+    footer, #footer-review, #footer-form {
         height: fit-content;
+    }
+
+    #footer-form {
+        margin-top: 69rem;
     }
 
     #footer-container {
