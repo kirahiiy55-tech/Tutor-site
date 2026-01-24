@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/repsite.css" rel="stylesheet">
+
+    <div class="sticky-top" id="header">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid" id="nav-container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" id="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="main.html">About me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="students.html">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="form.html">Let's Go</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex ms-3 ms-md-0">
+                    <ul id="contacts">
+                        <li><a href="#"><img src="imgs_repsite/telegram.svg" id="contact-icon" alt="telegram"></a></li>
+                        <li><a href="#"><img src="imgs_repsite/skype.svg" id="contact-icon" alt="skype"></a></li>
+                        <li><a href="#"><img src="imgs_repsite/instagram.svg" id="contact-icon" alt="instagram"></a>
+                        </li>
+                        <li><a href="#"><img src="imgs_repsite/call.svg" id="contact-icon" alt="phone"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</head>
+
+<body>
+
+    <div id="about">
+        <div class="about-text">
+            <h3>Let's get acquainted</h3>
+            <p>
+                I'm Ekaterina, an English and math tutor in Odessa. I work with students ages 10 and up. I prepare for
+                exams of
+                all levels: from school tests to the IELTS and entrance exams to foreign universities. I have over eight
+                years of
+                teaching experience, and my graduates include students of all ages and levels. I'm also happy to help
+                with your
+                request—please submit a request using the <a href="form.html" class="form">link</a> or message me on <a
+                    href="#" class="form">Telegram</a> If we already know each other, I would be glad to receive <a
+                    href="students.html#leave-review">your feedback</a>: satisfied
+                students are my main motivation.
+            </p>
+        </div>
+        <img src="imgs_repsite/tutor.jpg" alt="My photo" class="about-img">
+    </div>
+
+    <div id="education">
+        <h1>Education</h1>
+        <div class="educ-item">
+            <h3>2017-2021</h3>
+            <h4>South Ukrainian National Pedagogical University</h4>
+            <p>Teacher of foreign (English) language</p>
+        </div>
+        <img src="imgs_repsite/down.svg" class="next-educ" alt="Next education">
+        <div class="educ-item">
+            <h3>2015-2019</h3>
+            <h4>South Ukrainian National Pedagogical University</h4>
+            <p>Mathematical teacher</p>
+        </div>
+        <img src="imgs_repsite/down.svg" class="next-educ" alt="Next education">
+        <div class="educ-item">
+            <h3>2021-2022</h3>
+            <h4>South Ukrainian National Pedagogical University</h4>
+            <p>Teacher of higher education institutions</p>
+        </div>
+        <img src="imgs_repsite/down.svg" class="next-educ" alt="Next education">
+        <div class="educ-item">
+            <h3>2023-2026</h3>
+            <h4>Advanced training courses for teachers</h4>
+            <ul id="courses-list">
+                <li>European tutors assosiation (2023)</li>
+                <li>Annual advanced training course for the southern region of Ukraine (2024)</li>
+                <li>Advanced training courses at South Ukrainian National Pedagogical University (2026)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="diplomas">
+        <h1>Diplomas</h1>
+        <div id="diploma-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-fade active">
+                    <img src="imgs_repsite/eng-diploma.jpg" class="d-block w-100" alt="English diploma">
+                    <p>Teacher of Englsh diploma</p>
+                </div>
+
+                <div class="carousel-item carousel-fade">
+                    <img src="imgs_repsite/math-diploma.jpg" class="d-block w-100" alt="Math diploma">
+                    <p>Teacher of Mathematic diploma</p>
+                </div>
+
+                <div class="carousel-item carousel-fade">
+                    <img src="imgs_repsite/certificat1.jpg" class="d-block w-100" alt="Certificat">
+                    <p>Advanced training certificat</p>
+                </div>
+
+                <div class="carousel-item carousel-fade">
+                    <img src="imgs_repsite/certificat2.jpg" class="d-block w-100" alt="Certificat">
+                    <p>Advanced training certificat</p>
+                </div>
+
+                <div class="carousel-item carousel-fade">
+                    <img src="imgs_repsite/C1-certificat.jpg" class="d-block w-100" alt="Certificat">
+                    <p>Certificat of Enlish level</p>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#diploma-carousel" data-bs-slide="prev">
+                <img src="imgs_repsite/prev.svg" alt="prev" class="carousel-icon-diploma">
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#diploma-carousel" data-bs-slide="next">
+                <img src="imgs_repsite/next.svg" alt="next" class="carousel-icon-diploma">
+            </button>
+        </div>
+    </div>
+
+
+    <div id="experience">
+        <h1>Experience</h1>
+        <div id="experience-block">
+            <div class="experience-item">
+                <h3>2017-2021</h3>
+                <h4>English and Mathematical <br> school teacher</h4>
+                <p>South Ukrainian National Pedagogical University</p>
+            </div>
+            <img src="imgs_repsite/tutor-exp.jpg" id="experience-photo" alt="tutor">
+            <div class="experience-item">
+                <h3>2018-Today</h3>
+                <h4>English and Mathematical tutor</h4>
+                <p>Private practice</p>
+            </div>
+        </div>
+        <h4 id="review-btn-header">You can also read reviews of my work from my students or share your own impressions and results.</h4>
+        
+        <button class="review-btn">
+            <a href="students.html">Reviews</a>
+        </button>
+    </div>
+
+    <div id="help-info">
+        <h1>Additional information</h1>
+        <div id="info-grid">
+            <div class="game1">
+                <img src="imgs_repsite/math-game.jpg" alt="Math game" class="game-img">
+                <p>Online <a href="https://novatika.org/uk/5-klas/" alt="Math games" target="_blank">Math</a> tutorials for elementary and middle school students</p>
+            </div>
+            <div class="game2">
+                <img src="imgs_repsite/math-games.jpg" alt="Math game" class="game-img">
+                <p>Games for 5th-grade students with a <a href="https://www.matific.com/ua/uk/home/maths/grade-5/" alt="Math games" target="_blank">Math</a> focus</p>
+            </div>
+            <div class="game3">
+                <img src="imgs_repsite/games-photo.jpg" alt="Games photo" class="game-img">
+                <p>Games for the youngest students</p>
+            </div>
+            <div class="game4">
+                <img src="imgs_repsite/eng-game.jpg" alt="English language game" class="game-img">
+                <p>A mini-game I developed for children to learn <a href="#" alt="English games" target="_blank">English</a></p>
+            </div>
+            <div class="game5">
+                <img src="imgs_repsite/eng-games.jpg" alt="English language game" class="game-img">
+                <p>A set of various games for learning <a href="https://www.gamestolearnenglish.com/" alt="English games" target="_blank">English</a> for students in grades 5 and 6</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-container">
+            <div id="online">
+                <img src="imgs_repsite/online.svg" alt="online" class="footer-icon">
+                <p>Email: kath_tutor@gmail.com</p>
+            </div>
+            <div id="offline">
+                <img src="imgs_repsite/offline.svg" alt="offline" class="footer-icon">
+                <p>Adress: Odessa, M.Zhukov St., 25</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/repsite.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/repsite.css" rel="stylesheet">
+
+    <div class="sticky-top" id="header">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid" id="nav-container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" id="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="main.html">About me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="students.html">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="form.html">Let's Go</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex ms-3 ms-md-0">
+                    <ul id="contacts">
+                        <li><a href="#"><img src="imgs_repsite/telegram.svg" id="contact-icon" alt="telegram"></a></li>
+                        <li><a href="#"><img src="imgs_repsite/skype.svg" id="contact-icon" alt="skype"></a></li>
+                        <li><a href="#"><img src="imgs_repsite/instagram.svg" id="contact-icon" alt="instagram"></a>
+                        </li>
+                        <li><a href="#"><img src="imgs_repsite/call.svg" id="contact-icon" alt="phone"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</head>
+
+<body>
+    <div>
+        <!-- carousel -->
+        <!-- Owl CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+        <section class="reviews">
+            <div class="owl-carousel reviews-carousel">
+
+                <div class="review-item">
+                    <div class="review-text">
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <p>
+                            She helped my son improve his grades in just six months. She's incredibly involved and found
+                            a personalized approach.
+                        </p>
+                        <span>Anna</span>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-text">
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <p>
+                            I prepared for the IELTS exam and passed with a 7 on my first try! Excellent approach and
+                            methodology.
+                        </p>
+                        <span>Maria</span>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-text">
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <p>
+                            Ekaterina helped me get a perfect score on my exam – I'm now a student at the University of
+                            Barcelona.
+                        </p>
+                        <span>Ilya</span>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-text">
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <p>
+                            She's the best teacher, explains every topic clearly and thoroughly – a godsend.
+                        </p>
+                        <span>Vika</span>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-text">
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <p>
+                            Thanks to Ekaterina, I raised my level of spoken language, she is simply wonderful.
+                        </p>
+                        <span>Vlad</span>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-text">
+                        <span>⭐⭐⭐⭐</span>
+                        <p>
+                            My son (6th grade) and daughter (10th grade) attend Ekaterina's offline classes. They're
+                            showing excellent results in both math and English. I'm very happy with her teaching.
+                        </p>
+                        <span>Nataly</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <div class="review-header">
+        <h2>Leave your review</h2>
+    </div>
+
+    <div class="review-container">
+        <form action="https://formsubmit.co/kirahi.iy55@gmail.com" method="POST" class="review-form">
+            <input type="hidden" name="_subject" value="New review!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <label for="reviewer-name" id="lbl-review-name">Name</label>
+            <input type="text" id="reviewer-name" name="Name" required>
+
+            <label for="rating" id="lbl-rating">Rate</label>
+            <select id="rating" name="Rate" required>
+                <option value="">⭐Stars</option>
+                <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+                <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                <option value="⭐⭐⭐">⭐⭐⭐</option>
+                <option value="⭐⭐">⭐⭐</option>
+                <option value="⭐">⭐</option>
+            </select>
+
+            <label for="review-text" id="lbl-review-text">Your review</label>
+            <textarea id="review-text" name="Review" rows="5" type="text" maxlength="300"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <footer id="footer-review">
+        <div id="footer-container">
+            <div id="online">
+                <img src="imgs_repsite/online.svg" alt="online" class="footer-icon">
+                <p>Email: kath_tutor@gmail.com</p>
+            </div>
+            <div id="offline">
+                <img src="imgs_repsite/offline.svg" alt="offline" class="footer-icon">
+                <p>Adress: Odessa, M.Zhukov St., 25</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/repsite.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+
+</html>

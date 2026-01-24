@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/repsite.css" rel="stylesheet">
+
+    <div class="sticky-top" id="header">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid" id="nav-container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" id="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="main.html">About me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="students.html">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="form.html">Let's Go</a></li>
+                    </ul>
+                </div>
+                
+                <div class="d-flex ms-3 ms-md-0">
+                    <ul id="contacts" >
+                        <li><a href="#"><img src="imgs_repsite/telegram.svg" id="contact-icon" alt="telegram"></a></li>
+                        <li><a href="#"><img src="imgs_repsite/skype.svg" id="contact-icon" alt="skype"></a></li>
+                        <li><a href="#"><img src="imgs_repsite/instagram.svg" id="contact-icon" alt="instagram"></a></li>
+                        <li><a href="#"><img src="imgs_repsite/call.svg" id="contact-icon" alt="phone"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+</head>
+<body>
+    <div class="form-header">
+        <h1>Let`s start classes!</h1>
+        <p>Here you can leave your contacts and choose program that you want to study</p>
+    </div>
+    <div class="sign-container">
+        <form action="https://formsubmit.co/kirahi.iy55@gmail.com" method="POST" class="sign-form">
+            <input type="hidden" name="_subject" value="New application!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            
+            <label for="student-name" id="lbl-student-name">Name<span>*</span></label>
+            <input type="text" id="student-name" name="Name" required>
+
+            <label for="student-email" id="lbl-student-email">Email</label>
+            <input type="email" id="student-email" name="Email" required>
+
+            <label for="student-phone" id="lbl-student-phone">Phone<span>*</span></label>
+            <input type="tel" id="student-phone" name="Phone" required>
+            
+            <label for="prog-choose" id="lbl-prog-choose">Program<span>*</span></label>
+            <select id="prog-choose" name="Program" required>
+                <option value="">Choose program</option>
+                <option value="English">💙English</option>
+                <option value="Math">💛Math</option>
+                <option value="Both">💚Both</option>
+            </select>
+
+            <label for="student-lvl" id="lbl-student-lvl">Level</label>
+            <div id="student-lvl">
+                <select id="student-lvl-eng" name="Level">
+                    <option value="">What is your English level?</option>
+                    <option value="A1-A2">Beginner/Elementary</option>
+                    <option value="B1-B2">Intermediate/Upper-Intermediate</option>
+                    <option value="C1-C2">Advanced/Proficiency</option>
+                </select>
+                <select id="student-lvl-math" name="Level">
+                    <option value="">What is your Math level?</option>
+                    <option value="5-6 grade">5-6 grade</option>
+                    <option value="7-9 grade">7-9 grade</option>
+                    <option value="10-11 grade">10-11 grade</option>
+                    <option value="University">University</option>
+                </select>
+            </div>
+            
+            <label for="start-date" id="lbl-start-date">Start date</label>
+            <input type="date" id="start-date" name="Start date">
+
+            <label for="add-text" id="lbl-add-text">Add anything your need</label>
+            <textarea id="add-text" name="Additional" rows="5" type="text" maxlength="300"></textarea>
+            
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+
+    <footer id="footer-form">
+        <div id="footer-container">
+            <div id="online">
+                <img src="imgs_repsite/online.svg" alt="online" class="footer-icon">
+                <p>Email: kath_tutor@gmail.com</p>
+            </div>
+            <div id="offline">
+                <img src="imgs_repsite/offline.svg" alt="offline" class="footer-icon">
+                <p>Adress: Odessa, M.Zhukov St., 25</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/repsite.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
