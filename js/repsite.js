@@ -45,3 +45,44 @@ input.addEventListener('change', () => {
   }
 });
 
+const reveals = document.querySelectorAll('.contact-reveal');
+
+const isMobile = window.matchMedia(
+  '(max-width: 768px), (hover: none)'
+).matches;
+
+if (isMobile) {
+  reveals.forEach(reveal => {
+    reveal.addEventListener('click', () => {
+      const isActive = reveal.classList.contains('active');
+
+      reveals.forEach(r => {
+        r.classList.remove('active');
+        r.querySelector('.contact-text').style.maxWidth = '0';
+        r.querySelector('.contact-text').style.opacity = '0';
+        r.querySelector('.contact-text').style.marginLeft = '0';
+        r.style.display = 'flex';
+      });
+
+      document.querySelectorAll('.footer-contacts > a').forEach(a => {
+        a.style.display = 'flex';
+      });
+
+      if (!isActive) {
+        reveal.classList.add('active');
+
+        document.querySelectorAll('.footer-contacts > a').forEach(a => {
+          a.style.display = 'none';
+        });
+        reveals.forEach(r => {
+          if (r !== reveal) r.style.display = 'none';
+        });
+
+        const text = reveal.querySelector('.contact-text');
+        text.style.maxWidth = '70vw';
+        text.style.opacity = '1';
+        text.style.marginLeft = '0.5rem';
+      }
+    });
+  });
+}
