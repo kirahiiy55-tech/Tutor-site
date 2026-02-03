@@ -725,7 +725,7 @@ tbody tr:hover td {
 
 #form-block {
     display: block;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .sign-form {
