@@ -613,6 +613,7 @@ tbody tr:hover td {
   transform: scale(1.3);
 }
 
+
 /* Review form */
 .review-header{
     display: block;
@@ -620,6 +621,11 @@ tbody tr:hover td {
     text-align: center;
     justify-content: center;
     margin: 1rem auto;
+}
+
+#review-block {
+    display: block;
+    height: 75vh;
 }
 
 .review-container {
@@ -631,11 +637,15 @@ tbody tr:hover td {
 }
 
 @media (max-width: 768px) {
+    #review-block {
+        height: 85vh;
+    }
+
     .review-container {
         display: block;
         align-items: center;
         position: absolute;
-        left: 20%;
+        left: 12%;
         max-width: 260px;
     }
 }
@@ -704,6 +714,11 @@ tbody tr:hover td {
     );
 }
 
+#form-block {
+    display: block;
+    height: 150vh;
+}
+
 .sign-container {
     display: flex;
     align-items: center;
@@ -714,11 +729,15 @@ tbody tr:hover td {
 }
 
 @media (max-width: 768px) {
+    #form-block {
+        height: 180vh;
+    }
+
     .sign-container {
         display: block;
         align-items: center;
         position: absolute;
-        left: 20%;
+        left: 12%;
         max-width: 260px;
     }
 }
@@ -729,6 +748,7 @@ tbody tr:hover td {
     background-color: rgba(26, 26, 26, 0.3);
     border: none;
     border-radius: 5%;
+    height: 100vh;
 }
 
 .sign-form button {
@@ -816,7 +836,7 @@ footer {
     width: 100%;
     height: 4rem;
     background-color: rgb(84, 151, 84);
-    margin-top: 32rem;
+    /* margin-top: 32rem; */
 }
 
 #footer-form {
@@ -824,7 +844,7 @@ footer {
     width: 100%;
     height: 4rem;
     background-color: rgb(84, 151, 84);
-    margin-top: 67rem;
+    /* margin-top: 67rem; */
 }
 
 #footer-form .footer-container {
@@ -890,10 +910,6 @@ footer {
 @media (max-width: 768px) {
     footer, #footer-review, #footer-form {
         height: fit-content;
-    }
-
-    #footer-form {
-        margin-top: 69rem;
     }
 
     .footer-container {

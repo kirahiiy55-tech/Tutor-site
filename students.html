@@ -123,31 +123,32 @@
     <div class="review-header">
         <h2>Leave your review</h2>
     </div>
+    <div id="review-block">
+        <div class="review-container">
+            <form action="https://formsubmit.co/kirahi.iy55@gmail.com" method="POST" class="review-form">
+                <input type="hidden" name="_subject" value="New review!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
 
-    <div class="review-container">
-        <form action="https://formsubmit.co/kirahi.iy55@gmail.com" method="POST" class="review-form">
-            <input type="hidden" name="_subject" value="New review!">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
+                <label for="reviewer-name" id="lbl-review-name">Name</label>
+                <input type="text" id="reviewer-name" name="Name" required>
 
-            <label for="reviewer-name" id="lbl-review-name">Name</label>
-            <input type="text" id="reviewer-name" name="Name" required>
+                <label for="rating" id="lbl-rating">Rate</label>
+                <select id="rating" name="Rate" required>
+                    <option value="">⭐Stars</option>
+                    <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+                    <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                    <option value="⭐⭐⭐">⭐⭐⭐</option>
+                    <option value="⭐⭐">⭐⭐</option>
+                    <option value="⭐">⭐</option>
+                </select>
 
-            <label for="rating" id="lbl-rating">Rate</label>
-            <select id="rating" name="Rate" required>
-                <option value="">⭐Stars</option>
-                <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
-                <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
-                <option value="⭐⭐⭐">⭐⭐⭐</option>
-                <option value="⭐⭐">⭐⭐</option>
-                <option value="⭐">⭐</option>
-            </select>
+                <label for="review-text" id="lbl-review-text">Your review</label>
+                <textarea id="review-text" name="Review" rows="5" type="text" maxlength="300"></textarea>
 
-            <label for="review-text" id="lbl-review-text">Your review</label>
-            <textarea id="review-text" name="Review" rows="5" type="text" maxlength="300"></textarea>
-
-            <button type="submit">Send</button>
-        </form>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </div>
 
     <footer id="footer-review">
