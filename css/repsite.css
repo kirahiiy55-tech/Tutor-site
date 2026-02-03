@@ -737,7 +737,7 @@ tbody tr:hover td {
     background-color: rgba(84, 151, 84, 0.6);
     border: none;
     border-radius: 5%;
-    height: 100vh;
+    padding-bottom: 2rem;
 }
 
 #lbl-student-name,
