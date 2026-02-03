@@ -723,6 +723,11 @@ tbody tr:hover td {
     }
 }
 
+#form-block {
+    display: block;
+    padding-bottom: 2rem;
+}
+
 .sign-form {
     width: 100%;
     display: block;
