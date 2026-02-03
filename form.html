@@ -38,59 +38,65 @@
 
 </head>
 <body>
-    <div class="form-header">
-        <h1>Let`s start classes!</h1>
-        <p>Here you can leave your contacts and choose program that you want to study</p>
-    </div>
-    <div class="sign-container">
-        <form action="https://formsubmit.co/kirahi.iy55@gmail.com" method="POST" class="sign-form">
-            <input type="hidden" name="_subject" value="New application!">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-            
-            <label for="student-name" id="lbl-student-name">Name<span>*</span></label>
-            <input type="text" id="student-name" name="Name" required>
+    <main>
+        <div class="form-header">
+            <h1>Let`s start classes!</h1>
+            <p>Here you can leave your contacts and choose program that you want to study</p>
+        </div>
+        <div>
+            <div class="sign-container">
+                <form action="https://formsubmit.co/kirahi.iy55@gmail.com" method="POST" class="sign-form">
+                    <input type="hidden" name="_subject" value="New application!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <label for="student-name" id="lbl-student-name">Name<span>*</span></label>
+                    <input type="text" id="student-name" name="Name" required>
 
-            <label for="student-email" id="lbl-student-email">Email</label>
-            <input type="email" id="student-email" name="Email" required>
+                    <label for="student-email" id="lbl-student-email">Email</label>
+                    <input type="email" id="student-email" name="Email" required>
 
-            <label for="student-phone" id="lbl-student-phone">Phone<span>*</span></label>
-            <input type="tel" id="student-phone" name="Phone" required>
-            
-            <label for="prog-choose" id="lbl-prog-choose">Program<span>*</span></label>
-            <select id="prog-choose" name="Program" required>
-                <option value="">Choose program</option>
-                <option value="English">💙English</option>
-                <option value="Math">💛Math</option>
-                <option value="Both">💚Both</option>
-            </select>
+                    <label for="student-phone" id="lbl-student-phone">Phone<span>*</span></label>
+                    <input type="tel" id="student-phone" name="Phone" required>
+                    
+                    <label for="prog-choose" id="lbl-prog-choose">Program<span>*</span></label>
+                    <select id="prog-choose" name="Program" required>
+                        <option value="">Choose program</option>
+                        <option value="English">💙English</option>
+                        <option value="Math">💛Math</option>
+                        <option value="Both">💚Both</option>
+                    </select>
 
-            <label for="student-lvl" id="lbl-student-lvl">Level</label>
-            <div id="student-lvl">
-                <select id="student-lvl-eng" name="Level">
-                    <option value="">What is your English level?</option>
-                    <option value="A1-A2">Beginner/Elementary</option>
-                    <option value="B1-B2">Intermediate/Upper-Intermediate</option>
-                    <option value="C1-C2">Advanced/Proficiency</option>
-                </select>
-                <select id="student-lvl-math" name="Level">
-                    <option value="">What is your Math level?</option>
-                    <option value="5-6 grade">5-6 grade</option>
-                    <option value="7-9 grade">7-9 grade</option>
-                    <option value="10-11 grade">10-11 grade</option>
-                    <option value="University">University</option>
-                </select>
+                    <label for="student-lvl" id="lbl-student-lvl">Level</label>
+                    <div id="student-lvl">
+                        <select id="student-lvl-eng" name="Level">
+                            <option value="">What is your English level?</option>
+                            <option value="A1-A2">Beginner/Elementary</option>
+                            <option value="B1-B2">Intermediate/Upper-Intermediate</option>
+                            <option value="C1-C2">Advanced/Proficiency</option>
+                        </select>
+                        <select id="student-lvl-math" name="Level">
+                            <option value="">What is your Math level?</option>
+                            <option value="5-6 grade">5-6 grade</option>
+                            <option value="7-9 grade">7-9 grade</option>
+                            <option value="10-11 grade">10-11 grade</option>
+                            <option value="University">University</option>
+                        </select>
+                    </div>
+                    
+                    <label for="start-date" id="lbl-start-date">Start date</label>
+                    <input type="date" id="start-date" name="Start date">
+
+                    <label for="add-text" id="lbl-add-text">Add anything your need</label>
+                    <textarea id="add-text" name="Additional" rows="5" type="text" maxlength="300"></textarea>
+                    
+                    <button type="submit">Sign up</button>
+                </form>
             </div>
-            
-            <label for="start-date" id="lbl-start-date">Start date</label>
-            <input type="date" id="start-date" name="Start date">
+        </div>
 
-            <label for="add-text" id="lbl-add-text">Add anything your need</label>
-            <textarea id="add-text" name="Additional" rows="5" type="text" maxlength="300"></textarea>
-            
-            <button type="submit">Sign up</button>
-        </form>
-    </div>
+        <h4 class="form-header"></h4>
+    </main>
 
     <footer id="footer-form">
         <div class="footer-container">
