@@ -64,14 +64,14 @@ if (isMobile) {
         r.style.display = 'flex';
       });
 
-      document.querySelectorAll('.footer-contacts > a').forEach(a => {
+      document.querySelectorAll('.footer-container > a').forEach(a => {
         a.style.display = 'flex';
       });
 
       if (!isActive) {
         reveal.classList.add('active');
 
-        document.querySelectorAll('.footer-contacts > a').forEach(a => {
+        document.querySelectorAll('.footer-container > a').forEach(a => {
           a.style.display = 'none';
         });
         reveals.forEach(r => {
